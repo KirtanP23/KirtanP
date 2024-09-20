@@ -54,6 +54,14 @@ namespace InClass1
             this.lblGuessedNumber = new System.Windows.Forms.Label();
             this.nudGuessedNumber = new System.Windows.Forms.NumericUpDown();
             this.panIceCream = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblCashBalance = new System.Windows.Forms.Label();
+            this.txtCashBalance = new System.Windows.Forms.TextBox();
+            this.btnFiftyDollarClick = new System.Windows.Forms.Button();
+            this.btnTwentyDollarClick = new System.Windows.Forms.Button();
+            this.btnTenDollarClick = new System.Windows.Forms.Button();
             this.btnDollarFiveClick = new System.Windows.Forms.Button();
             this.btnOneDollarClick = new System.Windows.Forms.Button();
             this.lblChange = new System.Windows.Forms.Label();
@@ -72,14 +80,6 @@ namespace InClass1
             this.nudQuantity = new System.Windows.Forms.NumericUpDown();
             this.btnExit = new System.Windows.Forms.Button();
             this.toolTips = new System.Windows.Forms.ToolTip(this.components);
-            this.btnTenDollarClick = new System.Windows.Forms.Button();
-            this.btnTwentyDollarClick = new System.Windows.Forms.Button();
-            this.btnFiftyDollarClick = new System.Windows.Forms.Button();
-            this.txtCashBalance = new System.Windows.Forms.TextBox();
-            this.lblCashBalance = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panMenu.SuspendLayout();
             this.panGuessTheNumber.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudGTNNumGuesses)).BeginInit();
@@ -112,6 +112,7 @@ namespace InClass1
             this.btnIceCream.Size = new System.Drawing.Size(122, 49);
             this.btnIceCream.TabIndex = 2;
             this.btnIceCream.Text = "&Ice Cream";
+            this.toolTips.SetToolTip(this.btnIceCream, "Click for Ice Cream Shop Sim");
             this.btnIceCream.UseVisualStyleBackColor = true;
             this.btnIceCream.Click += new System.EventHandler(this.btnIceCream_Click);
             // 
@@ -356,6 +357,89 @@ namespace InClass1
             this.panIceCream.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.panIceCream.Size = new System.Drawing.Size(713, 637);
             this.panIceCream.TabIndex = 7;
+            this.toolTips.SetToolTip(this.panIceCream, "Ice Cream Shop Sim");
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(235, 397);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(175, 16);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "TOTAL AND CHANGE DUE";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(250, 299);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(225, 23);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "CASH OPTIONS";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(249, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(168, 20);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "ICE CREAM SHOP";
+            // 
+            // lblCashBalance
+            // 
+            this.lblCashBalance.Location = new System.Drawing.Point(562, 34);
+            this.lblCashBalance.Name = "lblCashBalance";
+            this.lblCashBalance.Size = new System.Drawing.Size(100, 23);
+            this.lblCashBalance.TabIndex = 26;
+            this.lblCashBalance.Text = "Cash Balance";
+            // 
+            // txtCashBalance
+            // 
+            this.txtCashBalance.Location = new System.Drawing.Point(565, 57);
+            this.txtCashBalance.Multiline = true;
+            this.txtCashBalance.Name = "txtCashBalance";
+            this.txtCashBalance.ReadOnly = true;
+            this.txtCashBalance.Size = new System.Drawing.Size(100, 22);
+            this.txtCashBalance.TabIndex = 25;
+            this.toolTips.SetToolTip(this.txtCashBalance, "Current Cash Balance");
+            this.txtCashBalance.TextChanged += new System.EventHandler(this.txtCashBalance_TextChanged);
+            // 
+            // btnFiftyDollarClick
+            // 
+            this.btnFiftyDollarClick.BackColor = System.Drawing.Color.Red;
+            this.btnFiftyDollarClick.Location = new System.Drawing.Point(554, 336);
+            this.btnFiftyDollarClick.Name = "btnFiftyDollarClick";
+            this.btnFiftyDollarClick.Size = new System.Drawing.Size(75, 37);
+            this.btnFiftyDollarClick.TabIndex = 11;
+            this.btnFiftyDollarClick.Text = "$&50";
+            this.toolTips.SetToolTip(this.btnFiftyDollarClick, "Click for Fifty Dollar");
+            this.btnFiftyDollarClick.UseVisualStyleBackColor = false;
+            this.btnFiftyDollarClick.Click += new System.EventHandler(this.btnFiftyDollarClick_Click);
+            // 
+            // btnTwentyDollarClick
+            // 
+            this.btnTwentyDollarClick.BackColor = System.Drawing.Color.Green;
+            this.btnTwentyDollarClick.Location = new System.Drawing.Point(408, 336);
+            this.btnTwentyDollarClick.Name = "btnTwentyDollarClick";
+            this.btnTwentyDollarClick.Size = new System.Drawing.Size(75, 37);
+            this.btnTwentyDollarClick.TabIndex = 10;
+            this.btnTwentyDollarClick.Text = "$&20";
+            this.toolTips.SetToolTip(this.btnTwentyDollarClick, "Click for Twenty Dollar");
+            this.btnTwentyDollarClick.UseVisualStyleBackColor = false;
+            this.btnTwentyDollarClick.Click += new System.EventHandler(this.btnTwentyDollarClick_Click);
+            // 
+            // btnTenDollarClick
+            // 
+            this.btnTenDollarClick.BackColor = System.Drawing.Color.Violet;
+            this.btnTenDollarClick.Location = new System.Drawing.Point(275, 336);
+            this.btnTenDollarClick.Name = "btnTenDollarClick";
+            this.btnTenDollarClick.Size = new System.Drawing.Size(75, 37);
+            this.btnTenDollarClick.TabIndex = 9;
+            this.btnTenDollarClick.Text = "$&10";
+            this.toolTips.SetToolTip(this.btnTenDollarClick, "Click for Ten Dollar");
+            this.btnTenDollarClick.UseVisualStyleBackColor = false;
+            this.btnTenDollarClick.Click += new System.EventHandler(this.btnTenDollarClick_Click);
             // 
             // btnDollarFiveClick
             // 
@@ -365,6 +449,7 @@ namespace InClass1
             this.btnDollarFiveClick.Size = new System.Drawing.Size(75, 37);
             this.btnDollarFiveClick.TabIndex = 8;
             this.btnDollarFiveClick.Text = "$&5";
+            this.toolTips.SetToolTip(this.btnDollarFiveClick, "Click for Five Dollar");
             this.btnDollarFiveClick.UseVisualStyleBackColor = false;
             this.btnDollarFiveClick.Click += new System.EventHandler(this.btnDollarFiveClick_Click);
             // 
@@ -376,6 +461,7 @@ namespace InClass1
             this.btnOneDollarClick.Size = new System.Drawing.Size(75, 37);
             this.btnOneDollarClick.TabIndex = 7;
             this.btnOneDollarClick.Text = "$&1";
+            this.toolTips.SetToolTip(this.btnOneDollarClick, "Click for One Dollar");
             this.btnOneDollarClick.UseVisualStyleBackColor = false;
             this.btnOneDollarClick.Click += new System.EventHandler(this.btnOneDollarClick_Click);
             // 
@@ -403,6 +489,7 @@ namespace InClass1
             this.btnTotal.Size = new System.Drawing.Size(75, 23);
             this.btnTotal.TabIndex = 6;
             this.btnTotal.Text = "&Total";
+            this.toolTips.SetToolTip(this.btnTotal, "Click to get the Total");
             this.btnTotal.UseVisualStyleBackColor = true;
             this.btnTotal.Click += new System.EventHandler(this.btnTotal_Click);
             // 
@@ -414,6 +501,7 @@ namespace InClass1
             this.txtChangeDue.ReadOnly = true;
             this.txtChangeDue.Size = new System.Drawing.Size(125, 67);
             this.txtChangeDue.TabIndex = 13;
+            this.toolTips.SetToolTip(this.txtChangeDue, "Due Changes");
             // 
             // txtPayment
             // 
@@ -422,6 +510,7 @@ namespace InClass1
             this.txtPayment.ReadOnly = true;
             this.txtPayment.Size = new System.Drawing.Size(43, 22);
             this.txtPayment.TabIndex = 12;
+            this.toolTips.SetToolTip(this.txtPayment, "Total Amount");
             // 
             // btnRemoveFromOrder
             // 
@@ -430,6 +519,7 @@ namespace InClass1
             this.btnRemoveFromOrder.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveFromOrder.TabIndex = 4;
             this.btnRemoveFromOrder.Text = "&Remove";
+            this.toolTips.SetToolTip(this.btnRemoveFromOrder, "Click to Remove from Order");
             this.btnRemoveFromOrder.UseVisualStyleBackColor = true;
             this.btnRemoveFromOrder.Click += new System.EventHandler(this.btnRemoveFromOrder_Click);
             // 
@@ -451,6 +541,7 @@ namespace InClass1
             this.lstCurrentOrder.Name = "lstCurrentOrder";
             this.lstCurrentOrder.Size = new System.Drawing.Size(341, 132);
             this.lstCurrentOrder.TabIndex = 7;
+            this.toolTips.SetToolTip(this.lstCurrentOrder, "Your ORder Details");
             // 
             // btnAddToOrder
             // 
@@ -459,6 +550,7 @@ namespace InClass1
             this.btnAddToOrder.Size = new System.Drawing.Size(112, 23);
             this.btnAddToOrder.TabIndex = 3;
             this.btnAddToOrder.Text = " &Add to Order";
+            this.toolTips.SetToolTip(this.btnAddToOrder, "Click to Add to Order");
             this.btnAddToOrder.UseVisualStyleBackColor = true;
             this.btnAddToOrder.Click += new System.EventHandler(this.btnAddToOrder_Click);
             // 
@@ -469,6 +561,7 @@ namespace InClass1
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 5;
             this.btnClear.Text = "&Clear";
+            this.toolTips.SetToolTip(this.btnClear, "Click to Clear from Order");
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
@@ -505,6 +598,7 @@ namespace InClass1
             this.lstIceCreamItems.ScrollAlwaysVisible = true;
             this.lstIceCreamItems.Size = new System.Drawing.Size(232, 20);
             this.lstIceCreamItems.TabIndex = 1;
+            this.toolTips.SetToolTip(this.lstIceCreamItems, "Select Flavor for Ice Cream");
             // 
             // nudQuantity
             // 
@@ -522,6 +616,7 @@ namespace InClass1
             this.nudQuantity.Name = "nudQuantity";
             this.nudQuantity.Size = new System.Drawing.Size(120, 22);
             this.nudQuantity.TabIndex = 2;
+            this.toolTips.SetToolTip(this.nudQuantity, "Select Quantity");
             this.nudQuantity.Value = new decimal(new int[] {
             1,
             0,
@@ -539,84 +634,6 @@ namespace InClass1
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // btnTenDollarClick
-            // 
-            this.btnTenDollarClick.BackColor = System.Drawing.Color.Violet;
-            this.btnTenDollarClick.Location = new System.Drawing.Point(275, 336);
-            this.btnTenDollarClick.Name = "btnTenDollarClick";
-            this.btnTenDollarClick.Size = new System.Drawing.Size(75, 37);
-            this.btnTenDollarClick.TabIndex = 9;
-            this.btnTenDollarClick.Text = "$&10";
-            this.btnTenDollarClick.UseVisualStyleBackColor = false;
-            this.btnTenDollarClick.Click += new System.EventHandler(this.btnTenDollarClick_Click);
-            // 
-            // btnTwentyDollarClick
-            // 
-            this.btnTwentyDollarClick.BackColor = System.Drawing.Color.Green;
-            this.btnTwentyDollarClick.Location = new System.Drawing.Point(408, 336);
-            this.btnTwentyDollarClick.Name = "btnTwentyDollarClick";
-            this.btnTwentyDollarClick.Size = new System.Drawing.Size(75, 37);
-            this.btnTwentyDollarClick.TabIndex = 10;
-            this.btnTwentyDollarClick.Text = "$&20";
-            this.btnTwentyDollarClick.UseVisualStyleBackColor = false;
-            this.btnTwentyDollarClick.Click += new System.EventHandler(this.btnTwentyDollarClick_Click);
-            // 
-            // btnFiftyDollarClick
-            // 
-            this.btnFiftyDollarClick.BackColor = System.Drawing.Color.Red;
-            this.btnFiftyDollarClick.Location = new System.Drawing.Point(554, 336);
-            this.btnFiftyDollarClick.Name = "btnFiftyDollarClick";
-            this.btnFiftyDollarClick.Size = new System.Drawing.Size(75, 37);
-            this.btnFiftyDollarClick.TabIndex = 11;
-            this.btnFiftyDollarClick.Text = "$&50";
-            this.btnFiftyDollarClick.UseVisualStyleBackColor = false;
-            this.btnFiftyDollarClick.Click += new System.EventHandler(this.btnFiftyDollarClick_Click);
-            // 
-            // txtCashBalance
-            // 
-            this.txtCashBalance.Location = new System.Drawing.Point(565, 57);
-            this.txtCashBalance.Multiline = true;
-            this.txtCashBalance.Name = "txtCashBalance";
-            this.txtCashBalance.ReadOnly = true;
-            this.txtCashBalance.Size = new System.Drawing.Size(100, 22);
-            this.txtCashBalance.TabIndex = 25;
-            this.txtCashBalance.TextChanged += new System.EventHandler(this.txtCashBalance_TextChanged);
-            // 
-            // lblCashBalance
-            // 
-            this.lblCashBalance.Location = new System.Drawing.Point(562, 34);
-            this.lblCashBalance.Name = "lblCashBalance";
-            this.lblCashBalance.Size = new System.Drawing.Size(100, 23);
-            this.lblCashBalance.TabIndex = 26;
-            this.lblCashBalance.Text = "Cash Balance";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(249, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 20);
-            this.label1.TabIndex = 27;
-            this.label1.Text = "ICE CREAM SHOP";
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(250, 299);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(225, 23);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "CASH OPTIONS";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(235, 397);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 16);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "TOTAL AND CHANGE DUE";
             // 
             // frmMain
             // 
