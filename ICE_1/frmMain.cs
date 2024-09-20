@@ -341,8 +341,6 @@ namespace InClass1
                 this.resetpanIceCream(sender, e);
             }
         }
-        #endregion
-
         private void resetpanIceCream(object sender, EventArgs e)
         {
             orderTotal = 0;
@@ -352,6 +350,6 @@ namespace InClass1
             txtPayment.Clear();
             txtChangeDue.Clear();
         }
-
+        #endregion
     }
 }

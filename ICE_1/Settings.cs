@@ -2,7 +2,7 @@
  * Settings for My Little Games
  * Author: Kirtan Patel
  * Date: Sept 19, 2024
- * This file contains constants used in the game.
+ * This file contains constants used in the Guess The Number game.
  */
 
 namespace InClass1

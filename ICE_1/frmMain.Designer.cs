@@ -169,6 +169,7 @@ namespace InClass1
             this.nudGTNNumGuesses.Name = "nudGTNNumGuesses";
             this.nudGTNNumGuesses.Size = new System.Drawing.Size(107, 22);
             this.nudGTNNumGuesses.TabIndex = 6;
+            this.nudGTNNumGuesses.Visible = false;
             // 
             // nudGTNRandomNumber
             // 
@@ -192,6 +193,7 @@ namespace InClass1
             0,
             0,
             0});
+            this.nudGTNRandomNumber.Visible = false;
             // 
             // lbl_GTN_Output
             // 
@@ -362,14 +364,16 @@ namespace InClass1
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(235, 397);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(175, 16);
+            this.label3.Size = new System.Drawing.Size(242, 20);
             this.label3.TabIndex = 29;
             this.label3.Text = "TOTAL AND CHANGE DUE";
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(250, 299);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 23);
@@ -388,6 +392,7 @@ namespace InClass1
             // 
             // lblCashBalance
             // 
+            this.lblCashBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCashBalance.Location = new System.Drawing.Point(562, 34);
             this.lblCashBalance.Name = "lblCashBalance";
             this.lblCashBalance.Size = new System.Drawing.Size(100, 23);
@@ -468,14 +473,16 @@ namespace InClass1
             // lblChange
             // 
             this.lblChange.AutoSize = true;
-            this.lblChange.Location = new System.Drawing.Point(36, 511);
+            this.lblChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChange.Location = new System.Drawing.Point(24, 511);
             this.lblChange.Name = "lblChange";
-            this.lblChange.Size = new System.Drawing.Size(82, 16);
+            this.lblChange.Size = new System.Drawing.Size(102, 20);
             this.lblChange.TabIndex = 16;
             this.lblChange.Text = "Change Due";
             // 
             // lblTotal
             // 
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(50, 435);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(100, 23);
@@ -632,6 +639,7 @@ namespace InClass1
             this.btnExit.Size = new System.Drawing.Size(67, 28);
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "E&xit";
+            this.toolTips.SetToolTip(this.btnExit, "Click to Exit Application");
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
