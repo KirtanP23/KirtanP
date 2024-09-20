@@ -1,0 +1,10 @@
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\bin\Debug\Week_2_Thu.exe.config
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\bin\Debug\Week_2_Thu.exe
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\bin\Debug\Week_2_Thu.pdb
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\obj\Debug\Week_2_Thu.csproj.AssemblyReference.cache
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\obj\Debug\Week_2_Thu.frmMain.resources
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\obj\Debug\Week_2_Thu.Properties.Resources.resources
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\obj\Debug\Week_2_Thu.csproj.GenerateResource.cache
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\obj\Debug\Week_2_Thu.csproj.CoreCompileInputs.cache
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\obj\Debug\Week_2_Thu.exe
+K:\COSC_2100\COSC_2100\Week_2_Thu\Week_2_Thu\obj\Debug\Week_2_Thu.pdb
