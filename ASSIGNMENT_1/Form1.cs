@@ -40,8 +40,9 @@ namespace ASSIGNMENT_1
         private int draws = 0;
         private string player1Symbol;
         private string player2Symbol;
-        #endregion
-        // Method that checks the names have valid characters
+        #endregion      
+
+        #region Determine Player Logic and Validations
         private bool ContainsInvalidCharacters(string input)
         {
             foreach (char c in input)
@@ -53,9 +54,6 @@ namespace ASSIGNMENT_1
             }
             return false;
         }
-
-        #region Determine Player Logic and Validations
-
         private void btnDeterminePlayer_Click(object sender, EventArgs e)
         {
             // Validate Player Names
@@ -67,7 +65,7 @@ namespace ASSIGNMENT_1
 
             if (txtPlayer1.Text.Equals(txtPlayer2.Text))
             {
-                MessageBox.Show("Player names can not be the Same!!!", "Invalid Input",MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Player names can not be the Same!!!", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -115,7 +113,7 @@ namespace ASSIGNMENT_1
                 tbxCurrentTurn.Text = $"{txtPlayer2.Text} ({player2Symbol}) goes first";
                 playerTurn = false; // Player 2's turn
             }
-
+            
             btnDeterminePlayer.Visible = false;
         }
         #endregion
