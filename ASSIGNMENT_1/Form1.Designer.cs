@@ -203,7 +203,7 @@
             this.lblSq7.Location = new System.Drawing.Point(337, 455);
             this.lblSq7.Name = "lblSq7";
             this.lblSq7.Size = new System.Drawing.Size(150, 120);
-            this.lblSq7.TabIndex = 48;
+            this.lblSq7.TabIndex = 12;
             this.lblSq7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq7, "Click to Play");
             // 
@@ -216,7 +216,7 @@
             this.lblSq4.Location = new System.Drawing.Point(337, 335);
             this.lblSq4.Name = "lblSq4";
             this.lblSq4.Size = new System.Drawing.Size(150, 120);
-            this.lblSq4.TabIndex = 47;
+            this.lblSq4.TabIndex = 9;
             this.lblSq4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq4, "Click to Play");
             // 
@@ -229,7 +229,7 @@
             this.lblSq1.Location = new System.Drawing.Point(337, 215);
             this.lblSq1.Name = "lblSq1";
             this.lblSq1.Size = new System.Drawing.Size(150, 120);
-            this.lblSq1.TabIndex = 46;
+            this.lblSq1.TabIndex = 6;
             this.lblSq1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq1, "Click to Play");
             // 
@@ -242,7 +242,7 @@
             this.lblSq9.Location = new System.Drawing.Point(637, 455);
             this.lblSq9.Name = "lblSq9";
             this.lblSq9.Size = new System.Drawing.Size(150, 120);
-            this.lblSq9.TabIndex = 45;
+            this.lblSq9.TabIndex = 14;
             this.lblSq9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq9, "Click to Play");
             // 
@@ -255,7 +255,7 @@
             this.lblSq8.Location = new System.Drawing.Point(487, 455);
             this.lblSq8.Name = "lblSq8";
             this.lblSq8.Size = new System.Drawing.Size(150, 120);
-            this.lblSq8.TabIndex = 44;
+            this.lblSq8.TabIndex = 13;
             this.lblSq8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq8, "Click to Play");
             // 
@@ -268,7 +268,7 @@
             this.lblSq6.Location = new System.Drawing.Point(637, 335);
             this.lblSq6.Name = "lblSq6";
             this.lblSq6.Size = new System.Drawing.Size(150, 120);
-            this.lblSq6.TabIndex = 43;
+            this.lblSq6.TabIndex = 11;
             this.lblSq6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq6, "Click to Play");
             // 
@@ -281,7 +281,7 @@
             this.lblSq2.Location = new System.Drawing.Point(487, 215);
             this.lblSq2.Name = "lblSq2";
             this.lblSq2.Size = new System.Drawing.Size(150, 120);
-            this.lblSq2.TabIndex = 42;
+            this.lblSq2.TabIndex = 7;
             this.lblSq2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq2, "Click to Play");
             // 
@@ -294,7 +294,7 @@
             this.lblSq3.Location = new System.Drawing.Point(637, 215);
             this.lblSq3.Name = "lblSq3";
             this.lblSq3.Size = new System.Drawing.Size(150, 120);
-            this.lblSq3.TabIndex = 41;
+            this.lblSq3.TabIndex = 8;
             this.lblSq3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq3, "Click to Play");
             // 
@@ -307,7 +307,7 @@
             this.lblSq5.Location = new System.Drawing.Point(487, 335);
             this.lblSq5.Name = "lblSq5";
             this.lblSq5.Size = new System.Drawing.Size(150, 120);
-            this.lblSq5.TabIndex = 40;
+            this.lblSq5.TabIndex = 10;
             this.lblSq5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.lblSq5, "Click to Play");
             // 
@@ -455,9 +455,9 @@
             this.gbPlayer1.Controls.Add(this.rdbP1o);
             this.gbPlayer1.Controls.Add(this.rdbP1x);
             this.gbPlayer1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPlayer1.Location = new System.Drawing.Point(73, 113);
+            this.gbPlayer1.Location = new System.Drawing.Point(52, 113);
             this.gbPlayer1.Name = "gbPlayer1";
-            this.gbPlayer1.Size = new System.Drawing.Size(226, 84);
+            this.gbPlayer1.Size = new System.Drawing.Size(247, 88);
             this.gbPlayer1.TabIndex = 2;
             this.gbPlayer1.TabStop = false;
             this.gbPlayer1.Text = "Select One :";
@@ -491,18 +491,18 @@
             // 
             this.lblP2.BackColor = System.Drawing.SystemColors.Control;
             this.lblP2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblP2.Location = new System.Drawing.Point(17, 224);
+            this.lblP2.Location = new System.Drawing.Point(25, 227);
             this.lblP2.Name = "lblP2";
-            this.lblP2.Size = new System.Drawing.Size(167, 22);
+            this.lblP2.Size = new System.Drawing.Size(159, 22);
             this.lblP2.TabIndex = 27;
             this.lblP2.Text = "Player 2 Name";
             this.toolTip1.SetToolTip(this.lblP2, "Enter Player 2 Name");
             // 
             // txtPlayer2
             // 
-            this.txtPlayer2.Location = new System.Drawing.Point(190, 224);
+            this.txtPlayer2.Location = new System.Drawing.Point(190, 227);
             this.txtPlayer2.Name = "txtPlayer2";
-            this.txtPlayer2.Size = new System.Drawing.Size(109, 31);
+            this.txtPlayer2.Size = new System.Drawing.Size(125, 31);
             this.txtPlayer2.TabIndex = 3;
             this.toolTip1.SetToolTip(this.txtPlayer2, "Enter Player 2 Name");
             // 
@@ -510,7 +510,7 @@
             // 
             this.txtPlayer1.Location = new System.Drawing.Point(190, 76);
             this.txtPlayer1.Name = "txtPlayer1";
-            this.txtPlayer1.Size = new System.Drawing.Size(109, 31);
+            this.txtPlayer1.Size = new System.Drawing.Size(125, 31);
             this.txtPlayer1.TabIndex = 1;
             this.toolTip1.SetToolTip(this.txtPlayer1, "Enter Player 1 Name");
             // 
@@ -518,9 +518,9 @@
             // 
             this.lblP1.BackColor = System.Drawing.SystemColors.Control;
             this.lblP1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblP1.Location = new System.Drawing.Point(33, 76);
+            this.lblP1.Location = new System.Drawing.Point(24, 76);
             this.lblP1.Name = "lblP1";
-            this.lblP1.Size = new System.Drawing.Size(151, 22);
+            this.lblP1.Size = new System.Drawing.Size(160, 22);
             this.lblP1.TabIndex = 24;
             this.lblP1.Text = "Player 1 Name";
             this.toolTip1.SetToolTip(this.lblP1, "Enter Player 1 Name");
@@ -529,10 +529,10 @@
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.Control;
             this.btnExit.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(637, 591);
+            this.btnExit.Location = new System.Drawing.Point(607, 591);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(180, 44);
-            this.btnExit.TabIndex = 23;
+            this.btnExit.TabIndex = 16;
             this.btnExit.Text = "&Exit";
             this.toolTip1.SetToolTip(this.btnExit, "Click to Exit Application");
             this.btnExit.UseVisualStyleBackColor = false;
@@ -545,7 +545,7 @@
             this.btnReset.Location = new System.Drawing.Point(337, 591);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(180, 44);
-            this.btnReset.TabIndex = 22;
+            this.btnReset.TabIndex = 15;
             this.btnReset.Text = "&Reset";
             this.toolTip1.SetToolTip(this.btnReset, "Click to Reset Game");
             this.btnReset.UseVisualStyleBackColor = false;
