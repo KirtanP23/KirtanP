@@ -382,11 +382,11 @@
             this.tbxCurrentTurn.BackColor = System.Drawing.Color.White;
             this.tbxCurrentTurn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbxCurrentTurn.Enabled = false;
-            this.tbxCurrentTurn.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxCurrentTurn.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbxCurrentTurn.Location = new System.Drawing.Point(446, 92);
             this.tbxCurrentTurn.Name = "tbxCurrentTurn";
             this.tbxCurrentTurn.ReadOnly = true;
-            this.tbxCurrentTurn.Size = new System.Drawing.Size(214, 35);
+            this.tbxCurrentTurn.Size = new System.Drawing.Size(214, 23);
             this.tbxCurrentTurn.TabIndex = 33;
             this.toolTip1.SetToolTip(this.tbxCurrentTurn, "Current Player Turn");
             // 
