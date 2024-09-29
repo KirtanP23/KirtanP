@@ -14,6 +14,7 @@ namespace ASSIGNMENT_1
 {
     public partial class frmMain : Form
     {
+        #region Form Load Event
         public frmMain()
         {
             InitializeComponent();
@@ -30,15 +31,17 @@ namespace ASSIGNMENT_1
                 square.Click += lblSquare_Click;
             }
         }
+        #endregion
 
+        #region Global Variables
         private bool playerTurn; // true for Player 1, false for Player 2
         private int player1Wins = 0;
         private int player2Wins = 0;
         private int draws = 0;
         private string player1Symbol;
         private string player2Symbol;
-
-         // Method that checks the names have valid characters
+        #endregion
+        // Method that checks the names have valid characters
         private bool ContainsInvalidCharacters(string input)
         {
             foreach (char c in input)
