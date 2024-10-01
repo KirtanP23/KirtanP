@@ -15,6 +15,9 @@ namespace ASSIGNMENT_1
     public partial class frmMain : Form
     {
         #region Form Load Event
+        /// <summary>
+        /// Initializing the form components and game set up
+        /// </summary>
         public frmMain()
         {
             InitializeComponent();
@@ -34,6 +37,10 @@ namespace ASSIGNMENT_1
         #endregion
 
         #region Global Variables
+        /// <summary>
+        /// Decalring Global Variables and Initializing them
+        /// </summary>
+
         private bool playerTurn; // true for Player 1, false for Player 2
         private int player1Wins = 0;
         private int player2Wins = 0;
@@ -43,6 +50,12 @@ namespace ASSIGNMENT_1
         #endregion      
 
         #region Determine Player Logic and Validations
+        /// <summary>
+        /// To check whether the user has entered a valid character or not
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+
         private bool ContainsInvalidCharacters(string input)
         {
             foreach (char c in input)
@@ -54,6 +67,12 @@ namespace ASSIGNMENT_1
             }
             return false;
         }
+
+        /// <summary>
+        /// Validating Names and symbols chosen by players and Start the game as Start button is clicked.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDeterminePlayer_Click(object sender, EventArgs e)
         {
             // Validate Player Names
@@ -114,11 +133,17 @@ namespace ASSIGNMENT_1
                 playerTurn = false; // Player 2's turn
             }
             
-            btnDeterminePlayer.Visible = false;
+            btnStart.Visible = false;
         }
         #endregion
 
         #region Label Square Click Events
+
+        /// <summary>
+        /// To plcae respective symbol for each player on label they click and validations on the labels
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void lblSquare_Click(object sender, EventArgs e)
         {
             Label clickedLabel = (Label)sender;
@@ -153,6 +178,9 @@ namespace ASSIGNMENT_1
         #endregion
 
         #region Winner Check Logic
+        /// <summary>
+        /// Check Winner or Draw after every move.
+        /// </summary>
         private void CheckWinner()
         {
             Label[] squares = { lblSq1, lblSq2, lblSq3,
@@ -218,6 +246,11 @@ namespace ASSIGNMENT_1
         #endregion
 
         #region Declare Winner
+        /// <summary>
+        /// Declare the Winner and Show respective scores.
+        /// </summary>
+        /// <param name="winningSymbol"></param>
+
         // Method to declare the winner and display the result
         private void DeclareWinner(string winningSymbol)
         {
@@ -250,6 +283,10 @@ namespace ASSIGNMENT_1
         #endregion
 
         #region Reset Game Logic
+        /// <summary>
+        /// Reset the Game after each game.
+        /// </summary>
+
         // Method to reset the game
         private void ResetGame()
         {
@@ -261,7 +298,7 @@ namespace ASSIGNMENT_1
             {
                 square.Text = "";
             }
-            btnDeterminePlayer.Visible = true;
+            btnStart.Visible = true;
 
             Random rnd = new Random();
             int firstPlayer = rnd.Next(0, 2); // 0 for Player 1, 1 for Player 2
@@ -280,6 +317,12 @@ namespace ASSIGNMENT_1
         #endregion
 
         #region Reset Button
+
+        /// <summary>
+        /// Reset the game and set the scores to default when Reset is clicked.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         // Reset Button Click Logic
         private void btnReset_Click(object sender, EventArgs e)
         {
@@ -303,6 +346,12 @@ namespace ASSIGNMENT_1
         #endregion
 
         #region Exit Button Logic
+
+        /// <summary>
+        /// To handle Exit button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         // Exit Button Logic
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -314,5 +363,10 @@ namespace ASSIGNMENT_1
             }
         }
         #endregion
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            
+        } 
     }
 }

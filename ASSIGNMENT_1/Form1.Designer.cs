@@ -54,7 +54,7 @@
             this.lblP2Score = new System.Windows.Forms.Label();
             this.lblP1Score = new System.Windows.Forms.Label();
             this.tbxCurrentTurn = new System.Windows.Forms.TextBox();
-            this.btnDeterminePlayer = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.lblTurn = new System.Windows.Forms.Label();
             this.gbPlayer2 = new System.Windows.Forms.GroupBox();
             this.rdbP2o = new System.Windows.Forms.RadioButton();
@@ -117,7 +117,7 @@
             this.panTicTacToe.Controls.Add(this.lblP2Score);
             this.panTicTacToe.Controls.Add(this.lblP1Score);
             this.panTicTacToe.Controls.Add(this.tbxCurrentTurn);
-            this.panTicTacToe.Controls.Add(this.btnDeterminePlayer);
+            this.panTicTacToe.Controls.Add(this.btnStart);
             this.panTicTacToe.Controls.Add(this.lblTurn);
             this.panTicTacToe.Controls.Add(this.gbPlayer2);
             this.panTicTacToe.Controls.Add(this.gbPlayer1);
@@ -390,17 +390,17 @@
             this.tbxCurrentTurn.TabIndex = 33;
             this.toolTip1.SetToolTip(this.tbxCurrentTurn, "Current Player Turn");
             // 
-            // btnDeterminePlayer
+            // btnStart
             // 
-            this.btnDeterminePlayer.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeterminePlayer.Location = new System.Drawing.Point(446, 131);
-            this.btnDeterminePlayer.Name = "btnDeterminePlayer";
-            this.btnDeterminePlayer.Size = new System.Drawing.Size(214, 47);
-            this.btnDeterminePlayer.TabIndex = 5;
-            this.btnDeterminePlayer.Text = "&Determine Player";
-            this.toolTip1.SetToolTip(this.btnDeterminePlayer, "Click to See Who will Play First");
-            this.btnDeterminePlayer.UseVisualStyleBackColor = false;
-            this.btnDeterminePlayer.Click += new System.EventHandler(this.btnDeterminePlayer_Click);
+            this.btnStart.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(446, 131);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(214, 47);
+            this.btnStart.TabIndex = 5;
+            this.btnStart.Text = "&Start";
+            this.toolTip1.SetToolTip(this.btnStart, "Click to See Who will Play First");
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnDeterminePlayer_Click);
             // 
             // lblTurn
             // 
@@ -528,6 +528,7 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(607, 591);
             this.btnExit.Name = "btnExit";
@@ -553,14 +554,17 @@
             // 
             // frmMain
             // 
+            this.AcceptButton = this.btnStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(999, 660);
             this.Controls.Add(this.panTicTacToe);
             this.Controls.Add(this.lblDeterminePlayer);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panTicTacToe.ResumeLayout(false);
             this.panTicTacToe.PerformLayout();
             this.gbPlayer2.ResumeLayout(false);
@@ -585,7 +589,7 @@
         private System.Windows.Forms.Label lblP2Score;
         private System.Windows.Forms.Label lblP1Score;
         private System.Windows.Forms.TextBox tbxCurrentTurn;
-        private System.Windows.Forms.Button btnDeterminePlayer;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblTurn;
         private System.Windows.Forms.GroupBox gbPlayer2;
         private System.Windows.Forms.RadioButton rdbP2o;
