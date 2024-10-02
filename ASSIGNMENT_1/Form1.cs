@@ -182,7 +182,7 @@ namespace ASSIGNMENT_1
         /// Check Winner or Draw after every move.
         /// </summary>
         private void CheckWinner()
-        {
+        { // Source: https://chatgpt.com/c/66eee098-9e5c-8000-a409-77f46e8d91d6
             Label[] squares = { lblSq1, lblSq2, lblSq3,
                         lblSq4, lblSq5, lblSq6,
                         lblSq7, lblSq8, lblSq9 };
