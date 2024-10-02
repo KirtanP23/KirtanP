@@ -34,6 +34,11 @@ namespace ASSIGNMENT_1
                 square.Click += lblSquare_Click;
             }
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            ResetGame();
+        }
         #endregion
 
         #region Global Variables
@@ -363,10 +368,5 @@ namespace ASSIGNMENT_1
             }
         }
         #endregion
-
-        private void frmMain_Load(object sender, EventArgs e)
-        {
-            
-        } 
     }
 }
