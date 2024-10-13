@@ -199,6 +199,7 @@
             this.btnAbout.Size = new System.Drawing.Size(109, 44);
             this.btnAbout.TabIndex = 2;
             this.btnAbout.Text = "&About";
+            this.toolTip1.SetToolTip(this.btnAbout, "Press to see About screen");
             this.btnAbout.UseVisualStyleBackColor = false;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
@@ -212,6 +213,7 @@
             this.btnStart.Size = new System.Drawing.Size(109, 44);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "&Start";
+            this.toolTip1.SetToolTip(this.btnStart, "Press to Start Game");
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -235,6 +237,7 @@
             this.pnlAbout.Size = new System.Drawing.Size(726, 477);
             this.pnlAbout.TabIndex = 3;
             this.pnlAbout.Visible = false;
+            this.pnlAbout.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAbout_Paint);
             // 
             // lblInfo
             // 
@@ -251,6 +254,7 @@
             this.btnCloseAbout.Size = new System.Drawing.Size(75, 23);
             this.btnCloseAbout.TabIndex = 0;
             this.btnCloseAbout.Text = "&Close";
+            this.toolTip1.SetToolTip(this.btnCloseAbout, "Press to close About panel");
             this.btnCloseAbout.UseVisualStyleBackColor = true;
             this.btnCloseAbout.Click += new System.EventHandler(this.btnCloseAbout_Click);
             // 

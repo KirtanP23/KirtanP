@@ -557,6 +557,12 @@ namespace Assignment_2
 
         }
 
+        // Garbage Reference
+        private void pnlAbout_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         /// <summary>
         /// Garbage Reference
         /// </summary>
@@ -738,7 +744,7 @@ namespace Assignment_2
             { BS.Boats.Submarine, 3 },
             { BS.Boats.Destroyer, 2 }
     };
-
+            // referenced from ChatGPT
             // Iterate over the boat types and display their positions
             foreach (var boat in boatSizes)
             {
@@ -928,6 +934,7 @@ namespace Assignment_2
             btnAbout.Visible = true;
         }
         #endregion
+
     }
 }
 
