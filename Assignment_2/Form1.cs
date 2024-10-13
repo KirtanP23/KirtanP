@@ -1,8 +1,8 @@
 ﻿/* *****************************
- * Title:   Battleship Assignment Main Class
+ * Title:   Battleship Assignment Main Class File
  * Author:  Kirtan Patel
  * Date:    Oct. 13, 2024
- * Purpose: To create application for Battleship game
+ * Purpose: To create application for Battleship game to complete Assignment - 2
  * ***************************** */
 
 
