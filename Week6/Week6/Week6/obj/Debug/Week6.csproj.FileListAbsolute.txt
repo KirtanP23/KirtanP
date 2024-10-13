@@ -1,0 +1,20 @@
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\obj\Debug\Week6.csproj.AssemblyReference.cache
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\obj\Debug\Week6.Properties.Resources.resources
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\obj\Debug\Week6.csproj.GenerateResource.cache
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\obj\Debug\Week6.csproj.CoreCompileInputs.cache
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\bin\Debug\Week6.exe.config
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\bin\Debug\Week6.exe
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\bin\Debug\Week6.pdb
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\obj\Debug\Week6.Form1.resources
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\obj\Debug\Week6.exe
+C:\Users\dev08\OneDrive\Desktop\Sem - 3\OOPS2\Week6\Week6\obj\Debug\Week6.pdb
+K:\COSC_2100\Week6\Week6\Week6\bin\Debug\Week6.exe.config
+K:\COSC_2100\Week6\Week6\Week6\bin\Debug\Week6.exe
+K:\COSC_2100\Week6\Week6\Week6\bin\Debug\Week6.pdb
+K:\COSC_2100\Week6\Week6\Week6\obj\Debug\Week6.csproj.AssemblyReference.cache
+K:\COSC_2100\Week6\Week6\Week6\obj\Debug\Week6.Form1.resources
+K:\COSC_2100\Week6\Week6\Week6\obj\Debug\Week6.Properties.Resources.resources
+K:\COSC_2100\Week6\Week6\Week6\obj\Debug\Week6.csproj.GenerateResource.cache
+K:\COSC_2100\Week6\Week6\Week6\obj\Debug\Week6.csproj.CoreCompileInputs.cache
+K:\COSC_2100\Week6\Week6\Week6\obj\Debug\Week6.exe
+K:\COSC_2100\Week6\Week6\Week6\obj\Debug\Week6.pdb
