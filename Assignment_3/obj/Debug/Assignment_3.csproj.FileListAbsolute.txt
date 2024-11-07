@@ -1,0 +1,12 @@
+K:\COSC_2100\Assignment_3\bin\Debug\Assignment_3.exe.config
+K:\COSC_2100\Assignment_3\bin\Debug\Assignment_3.exe
+K:\COSC_2100\Assignment_3\bin\Debug\Assignment_3.pdb
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.csproj.AssemblyReference.cache
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.Properties.Resources.resources
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.csproj.GenerateResource.cache
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.csproj.CoreCompileInputs.cache
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.exe
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.pdb
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.frmSplash.resources
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.frmMain.resources
+K:\COSC_2100\Assignment_3\obj\Debug\Assignment_3.frmCreateCharacter.resources
