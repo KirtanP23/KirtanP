@@ -1,0 +1,12 @@
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\bin\Debug\Demo_Week10a_DataBindingPlus.exe.config
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\bin\Debug\Demo_Week10a_DataBindingPlus.exe
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\bin\Debug\Demo_Week10a_DataBindingPlus.pdb
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.csproj.AssemblyReference.cache
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.frmStudent.resources
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.frmSplash.resources
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.Properties.Resources.resources
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.csproj.GenerateResource.cache
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.csproj.CoreCompileInputs.cache
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.exe
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.pdb
+K:\COSC_2100\Demo_Week10a_DataBindingPlus\obj\Debug\Demo_Week10a_DataBindingPlus.frmDB.resources

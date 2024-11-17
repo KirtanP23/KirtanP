@@ -43,6 +43,7 @@ namespace Assignment_3
         /// </summary>
         private void frmMain_Load(object sender, EventArgs e)
         {
+            UpdateCharacterList();
         }
 
         /// <summary>

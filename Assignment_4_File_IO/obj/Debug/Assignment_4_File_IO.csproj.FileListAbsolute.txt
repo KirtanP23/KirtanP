@@ -1,0 +1,11 @@
+K:\COSC_2100\Assignment_4_File_IO\bin\Debug\Assignment_4_File_IO.exe.config
+K:\COSC_2100\Assignment_4_File_IO\bin\Debug\Assignment_4_File_IO.exe
+K:\COSC_2100\Assignment_4_File_IO\bin\Debug\Assignment_4_File_IO.pdb
+K:\COSC_2100\Assignment_4_File_IO\obj\Debug\Assignment_4_File_IO.csproj.AssemblyReference.cache
+K:\COSC_2100\Assignment_4_File_IO\obj\Debug\Assignment_4_File_IO.frmMain.resources
+K:\COSC_2100\Assignment_4_File_IO\obj\Debug\Assignment_4_File_IO.Properties.Resources.resources
+K:\COSC_2100\Assignment_4_File_IO\obj\Debug\Assignment_4_File_IO.csproj.GenerateResource.cache
+K:\COSC_2100\Assignment_4_File_IO\obj\Debug\Assignment_4_File_IO.csproj.CoreCompileInputs.cache
+K:\COSC_2100\Assignment_4_File_IO\obj\Debug\Assignment_4_File_IO.exe
+K:\COSC_2100\Assignment_4_File_IO\obj\Debug\Assignment_4_File_IO.pdb
+K:\COSC_2100\Assignment_4_File_IO\obj\Debug\Assignment_4_File_IO.frmSplash.resources

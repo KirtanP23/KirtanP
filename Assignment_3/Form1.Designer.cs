@@ -52,11 +52,12 @@
             // 
             // btnAbout
             // 
-            this.btnAbout.BackColor = System.Drawing.Color.Transparent;
-            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbout.Location = new System.Drawing.Point(702, 310);
+            this.btnAbout.BackColor = System.Drawing.Color.Crimson;
+            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAbout.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.Location = new System.Drawing.Point(609, 500);
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(147, 37);
+            this.btnAbout.Size = new System.Drawing.Size(147, 51);
             this.btnAbout.TabIndex = 1;
             this.btnAbout.Text = "&About";
             this.toolTip1.SetToolTip(this.btnAbout, "Click to know more about the game");
@@ -65,11 +66,12 @@
             // 
             // btnStart
             // 
-            this.btnStart.BackColor = System.Drawing.Color.Transparent;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart.Location = new System.Drawing.Point(188, 310);
+            this.btnStart.BackColor = System.Drawing.Color.Crimson;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnStart.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(242, 500);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(147, 37);
+            this.btnStart.Size = new System.Drawing.Size(147, 51);
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "&Start";
             this.toolTip1.SetToolTip(this.btnStart, "click to Start");
@@ -82,6 +84,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1038, 614);
             this.Controls.Add(this.panSplash);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

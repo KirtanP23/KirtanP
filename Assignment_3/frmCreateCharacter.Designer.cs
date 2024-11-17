@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreateCharacter));
             this.gbxCharacterDetails = new System.Windows.Forms.GroupBox();
+            this.lblCombat = new System.Windows.Forms.Label();
+            this.lblAttributes = new System.Windows.Forms.Label();
             this.nudLevel = new System.Windows.Forms.NumericUpDown();
             this.nudHitPoints = new System.Windows.Forms.NumericUpDown();
             this.nudSpeed = new System.Windows.Forms.NumericUpDown();
@@ -86,6 +89,8 @@
             // gbxCharacterDetails
             // 
             this.gbxCharacterDetails.BackColor = System.Drawing.Color.Transparent;
+            this.gbxCharacterDetails.Controls.Add(this.lblCombat);
+            this.gbxCharacterDetails.Controls.Add(this.lblAttributes);
             this.gbxCharacterDetails.Controls.Add(this.nudLevel);
             this.gbxCharacterDetails.Controls.Add(this.nudHitPoints);
             this.gbxCharacterDetails.Controls.Add(this.nudSpeed);
@@ -123,6 +128,7 @@
             this.gbxCharacterDetails.Controls.Add(this.lblCharName);
             this.gbxCharacterDetails.Controls.Add(this.cmbAlignment);
             this.gbxCharacterDetails.Controls.Add(this.cmbRace);
+            this.gbxCharacterDetails.ForeColor = System.Drawing.Color.Crimson;
             this.gbxCharacterDetails.Location = new System.Drawing.Point(68, 48);
             this.gbxCharacterDetails.Name = "gbxCharacterDetails";
             this.gbxCharacterDetails.Size = new System.Drawing.Size(1070, 481);
@@ -130,6 +136,28 @@
             this.gbxCharacterDetails.TabStop = false;
             this.gbxCharacterDetails.Text = "Character Details :";
             this.toolTip1.SetToolTip(this.gbxCharacterDetails, "Dundeons and Dragons Character Sheet");
+            // 
+            // lblCombat
+            // 
+            this.lblCombat.BackColor = System.Drawing.Color.Transparent;
+            this.lblCombat.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCombat.ForeColor = System.Drawing.Color.Crimson;
+            this.lblCombat.Location = new System.Drawing.Point(867, 22);
+            this.lblCombat.Name = "lblCombat";
+            this.lblCombat.Size = new System.Drawing.Size(101, 23);
+            this.lblCombat.TabIndex = 59;
+            this.lblCombat.Text = "COMBAT ";
+            // 
+            // lblAttributes
+            // 
+            this.lblAttributes.BackColor = System.Drawing.Color.Transparent;
+            this.lblAttributes.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAttributes.ForeColor = System.Drawing.Color.Crimson;
+            this.lblAttributes.Location = new System.Drawing.Point(493, 18);
+            this.lblAttributes.Name = "lblAttributes";
+            this.lblAttributes.Size = new System.Drawing.Size(149, 27);
+            this.lblAttributes.TabIndex = 58;
+            this.lblAttributes.Text = "ATTRIBUTES";
             // 
             // nudLevel
             // 
@@ -142,7 +170,7 @@
             // 
             // nudHitPoints
             // 
-            this.nudHitPoints.Location = new System.Drawing.Point(555, 382);
+            this.nudHitPoints.Location = new System.Drawing.Point(908, 181);
             this.nudHitPoints.Name = "nudHitPoints";
             this.nudHitPoints.Size = new System.Drawing.Size(120, 22);
             this.nudHitPoints.TabIndex = 17;
@@ -150,7 +178,7 @@
             // 
             // nudSpeed
             // 
-            this.nudSpeed.Location = new System.Drawing.Point(555, 343);
+            this.nudSpeed.Location = new System.Drawing.Point(908, 138);
             this.nudSpeed.Name = "nudSpeed";
             this.nudSpeed.Size = new System.Drawing.Size(120, 22);
             this.nudSpeed.TabIndex = 16;
@@ -158,7 +186,7 @@
             // 
             // nudInitiative
             // 
-            this.nudInitiative.Location = new System.Drawing.Point(555, 302);
+            this.nudInitiative.Location = new System.Drawing.Point(908, 94);
             this.nudInitiative.Name = "nudInitiative";
             this.nudInitiative.Size = new System.Drawing.Size(120, 22);
             this.nudInitiative.TabIndex = 15;
@@ -166,7 +194,7 @@
             // 
             // nudArmour
             // 
-            this.nudArmour.Location = new System.Drawing.Point(555, 261);
+            this.nudArmour.Location = new System.Drawing.Point(908, 52);
             this.nudArmour.Name = "nudArmour";
             this.nudArmour.Size = new System.Drawing.Size(120, 22);
             this.nudArmour.TabIndex = 14;
@@ -174,7 +202,7 @@
             // 
             // nudCharisma
             // 
-            this.nudCharisma.Location = new System.Drawing.Point(555, 218);
+            this.nudCharisma.Location = new System.Drawing.Point(555, 284);
             this.nudCharisma.Maximum = new decimal(new int[] {
             20,
             0,
@@ -197,7 +225,7 @@
             // 
             // nudWisdom
             // 
-            this.nudWisdom.Location = new System.Drawing.Point(555, 182);
+            this.nudWisdom.Location = new System.Drawing.Point(555, 236);
             this.nudWisdom.Maximum = new decimal(new int[] {
             20,
             0,
@@ -220,7 +248,7 @@
             // 
             // nudIntelligence
             // 
-            this.nudIntelligence.Location = new System.Drawing.Point(555, 131);
+            this.nudIntelligence.Location = new System.Drawing.Point(555, 188);
             this.nudIntelligence.Maximum = new decimal(new int[] {
             20,
             0,
@@ -243,7 +271,7 @@
             // 
             // nudConstitution
             // 
-            this.nudConstitution.Location = new System.Drawing.Point(555, 85);
+            this.nudConstitution.Location = new System.Drawing.Point(555, 142);
             this.nudConstitution.Maximum = new decimal(new int[] {
             20,
             0,
@@ -266,7 +294,7 @@
             // 
             // nudDexiterity
             // 
-            this.nudDexiterity.Location = new System.Drawing.Point(555, 33);
+            this.nudDexiterity.Location = new System.Drawing.Point(555, 97);
             this.nudDexiterity.Maximum = new decimal(new int[] {
             20,
             0,
@@ -289,7 +317,7 @@
             // 
             // nudStrength
             // 
-            this.nudStrength.Location = new System.Drawing.Point(166, 399);
+            this.nudStrength.Location = new System.Drawing.Point(555, 55);
             this.nudStrength.Maximum = new decimal(new int[] {
             20,
             0,
@@ -322,28 +350,39 @@
             this.nudExpPoints.Size = new System.Drawing.Size(120, 22);
             this.nudExpPoints.TabIndex = 7;
             this.toolTip1.SetToolTip(this.nudExpPoints, "Enter XP");
+            this.nudExpPoints.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.Crimson;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(870, 291);
+            this.btnExit.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.Location = new System.Drawing.Point(733, 409);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(174, 58);
             this.btnExit.TabIndex = 19;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "&Exit";
             this.toolTip1.SetToolTip(this.btnExit, "Click to Exit");
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(870, 99);
+            this.btnSave.BackColor = System.Drawing.Color.Crimson;
+            this.btnSave.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.Black;
+            this.btnSave.Location = new System.Drawing.Point(212, 409);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(174, 58);
             this.btnSave.TabIndex = 18;
-            this.btnSave.Text = "Save";
+            this.btnSave.Text = "&Save";
             this.toolTip1.SetToolTip(this.btnSave, "Click to Save");
-            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // rdbFemale
@@ -389,7 +428,9 @@
             // 
             // lblHitPoints
             // 
-            this.lblHitPoints.Location = new System.Drawing.Point(449, 384);
+            this.lblHitPoints.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHitPoints.ForeColor = System.Drawing.Color.Crimson;
+            this.lblHitPoints.Location = new System.Drawing.Point(806, 183);
             this.lblHitPoints.Name = "lblHitPoints";
             this.lblHitPoints.Size = new System.Drawing.Size(100, 23);
             this.lblHitPoints.TabIndex = 27;
@@ -397,7 +438,9 @@
             // 
             // lblSpeed
             // 
-            this.lblSpeed.Location = new System.Drawing.Point(449, 345);
+            this.lblSpeed.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpeed.ForeColor = System.Drawing.Color.Crimson;
+            this.lblSpeed.Location = new System.Drawing.Point(817, 137);
             this.lblSpeed.Name = "lblSpeed";
             this.lblSpeed.Size = new System.Drawing.Size(100, 23);
             this.lblSpeed.TabIndex = 26;
@@ -405,7 +448,9 @@
             // 
             // lblInitiative
             // 
-            this.lblInitiative.Location = new System.Drawing.Point(446, 304);
+            this.lblInitiative.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInitiative.ForeColor = System.Drawing.Color.Crimson;
+            this.lblInitiative.Location = new System.Drawing.Point(813, 96);
             this.lblInitiative.Name = "lblInitiative";
             this.lblInitiative.Size = new System.Drawing.Size(100, 23);
             this.lblInitiative.TabIndex = 25;
@@ -413,7 +458,9 @@
             // 
             // lblArmour
             // 
-            this.lblArmour.Location = new System.Drawing.Point(449, 263);
+            this.lblArmour.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArmour.ForeColor = System.Drawing.Color.Crimson;
+            this.lblArmour.Location = new System.Drawing.Point(817, 54);
             this.lblArmour.Name = "lblArmour";
             this.lblArmour.Size = new System.Drawing.Size(100, 23);
             this.lblArmour.TabIndex = 24;
@@ -421,7 +468,9 @@
             // 
             // lblCharisma
             // 
-            this.lblCharisma.Location = new System.Drawing.Point(446, 220);
+            this.lblCharisma.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCharisma.ForeColor = System.Drawing.Color.Crimson;
+            this.lblCharisma.Location = new System.Drawing.Point(446, 290);
             this.lblCharisma.Name = "lblCharisma";
             this.lblCharisma.Size = new System.Drawing.Size(100, 23);
             this.lblCharisma.TabIndex = 23;
@@ -429,7 +478,9 @@
             // 
             // lblWisdom
             // 
-            this.lblWisdom.Location = new System.Drawing.Point(449, 182);
+            this.lblWisdom.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWisdom.ForeColor = System.Drawing.Color.Crimson;
+            this.lblWisdom.Location = new System.Drawing.Point(446, 236);
             this.lblWisdom.Name = "lblWisdom";
             this.lblWisdom.Size = new System.Drawing.Size(100, 23);
             this.lblWisdom.TabIndex = 22;
@@ -437,23 +488,29 @@
             // 
             // lblIntelligence
             // 
-            this.lblIntelligence.Location = new System.Drawing.Point(449, 134);
+            this.lblIntelligence.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIntelligence.ForeColor = System.Drawing.Color.Crimson;
+            this.lblIntelligence.Location = new System.Drawing.Point(435, 188);
             this.lblIntelligence.Name = "lblIntelligence";
-            this.lblIntelligence.Size = new System.Drawing.Size(100, 23);
+            this.lblIntelligence.Size = new System.Drawing.Size(127, 23);
             this.lblIntelligence.TabIndex = 21;
             this.lblIntelligence.Text = "Intelligence";
             // 
             // lblConstitution
             // 
-            this.lblConstitution.Location = new System.Drawing.Point(449, 86);
+            this.lblConstitution.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConstitution.ForeColor = System.Drawing.Color.Crimson;
+            this.lblConstitution.Location = new System.Drawing.Point(432, 151);
             this.lblConstitution.Name = "lblConstitution";
-            this.lblConstitution.Size = new System.Drawing.Size(100, 23);
+            this.lblConstitution.Size = new System.Drawing.Size(130, 23);
             this.lblConstitution.TabIndex = 20;
             this.lblConstitution.Text = "Constitution";
             // 
             // lblDexterity
             // 
-            this.lblDexterity.Location = new System.Drawing.Point(449, 31);
+            this.lblDexterity.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDexterity.ForeColor = System.Drawing.Color.Crimson;
+            this.lblDexterity.Location = new System.Drawing.Point(449, 106);
             this.lblDexterity.Name = "lblDexterity";
             this.lblDexterity.Size = new System.Drawing.Size(100, 23);
             this.lblDexterity.TabIndex = 19;
@@ -461,7 +518,9 @@
             // 
             // lblStrength
             // 
-            this.lblStrength.Location = new System.Drawing.Point(23, 398);
+            this.lblStrength.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStrength.ForeColor = System.Drawing.Color.Crimson;
+            this.lblStrength.Location = new System.Drawing.Point(447, 63);
             this.lblStrength.Name = "lblStrength";
             this.lblStrength.Size = new System.Drawing.Size(100, 23);
             this.lblStrength.TabIndex = 18;
@@ -469,6 +528,8 @@
             // 
             // lblExpPoints
             // 
+            this.lblExpPoints.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExpPoints.ForeColor = System.Drawing.Color.Crimson;
             this.lblExpPoints.Location = new System.Drawing.Point(23, 345);
             this.lblExpPoints.Name = "lblExpPoints";
             this.lblExpPoints.Size = new System.Drawing.Size(116, 23);
@@ -477,6 +538,8 @@
             // 
             // lblGender
             // 
+            this.lblGender.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.ForeColor = System.Drawing.Color.Crimson;
             this.lblGender.Location = new System.Drawing.Point(23, 288);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(100, 23);
@@ -485,6 +548,8 @@
             // 
             // lblAlignment
             // 
+            this.lblAlignment.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAlignment.ForeColor = System.Drawing.Color.Crimson;
             this.lblAlignment.Location = new System.Drawing.Point(23, 231);
             this.lblAlignment.Name = "lblAlignment";
             this.lblAlignment.Size = new System.Drawing.Size(100, 23);
@@ -493,6 +558,8 @@
             // 
             // lblRace
             // 
+            this.lblRace.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRace.ForeColor = System.Drawing.Color.Crimson;
             this.lblRace.Location = new System.Drawing.Point(23, 185);
             this.lblRace.Name = "lblRace";
             this.lblRace.Size = new System.Drawing.Size(100, 23);
@@ -501,6 +568,8 @@
             // 
             // lblLevel
             // 
+            this.lblLevel.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLevel.ForeColor = System.Drawing.Color.Crimson;
             this.lblLevel.Location = new System.Drawing.Point(23, 131);
             this.lblLevel.Name = "lblLevel";
             this.lblLevel.Size = new System.Drawing.Size(100, 23);
@@ -509,6 +578,8 @@
             // 
             // lblClass
             // 
+            this.lblClass.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClass.ForeColor = System.Drawing.Color.Crimson;
             this.lblClass.Location = new System.Drawing.Point(23, 86);
             this.lblClass.Name = "lblClass";
             this.lblClass.Size = new System.Drawing.Size(100, 23);
@@ -517,6 +588,8 @@
             // 
             // lblCharName
             // 
+            this.lblCharName.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCharName.ForeColor = System.Drawing.Color.Crimson;
             this.lblCharName.Location = new System.Drawing.Point(23, 35);
             this.lblCharName.Name = "lblCharName";
             this.lblCharName.Size = new System.Drawing.Size(116, 23);
@@ -546,11 +619,15 @@
             this.AcceptButton = this.btnSave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1208, 572);
             this.Controls.Add(this.gbxCharacterDetails);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCreateCharacter";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dungeons and Dragons Character Sheet";
             this.toolTip1.SetToolTip(this, "Dundeons and Dragons Character Sheet");
             this.Load += new System.EventHandler(this.frmCreateCharacter_Load);
@@ -613,5 +690,7 @@
         private System.Windows.Forms.NumericUpDown nudConstitution;
         private System.Windows.Forms.NumericUpDown nudLevel;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Label lblAttributes;
+        private System.Windows.Forms.Label lblCombat;
     }
 }
