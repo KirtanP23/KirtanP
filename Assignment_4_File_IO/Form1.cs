@@ -42,6 +42,17 @@ namespace Assignment_4_File_IO
 
             // Load profiles into the profiles combo box
             LoadProfilesToComboBox();
+
+
+            var profiles = Utilities.LoadProfiles();
+            var defaultProfile = profiles.FirstOrDefault(p => p.IsDefault); //Chatgpt
+
+            if (defaultProfile != null)
+            {
+                cmbProfiles.SelectedItem = defaultProfile.ProfileName;
+                PopulateSettingsFromProfile(defaultProfile);
+               
+            }
         }
 
         #endregion
@@ -216,5 +227,26 @@ namespace Assignment_4_File_IO
         }
 
         #endregion
+
+        private void btnSetDefault_Click(object sender, EventArgs e)
+        {
+            if (cmbProfiles.SelectedIndex != -1)
+            {
+                string selectedProfileName = cmbProfiles.SelectedItem.ToString();
+                var profiles = Utilities.LoadProfiles();
+
+                var selectedProfile = profiles.FirstOrDefault(p => p.ProfileName == selectedProfileName);
+                if (selectedProfile != null)
+                {
+                    selectedProfile.IsDefault = true;
+                    Utilities.SaveAllProfiles(profiles);
+                    MessageBox.Show($"Profile '{selectedProfileName}' has been set as the default profile.", "Success");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a profile to set as default.", "Warning");
+            }
+        }
     }
 }

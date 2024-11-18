@@ -34,58 +34,45 @@ namespace Assignment_4_File_IO
 
         public static void SaveProfile(PlayerProfile profile)
         {
+            var profiles = LoadProfiles();
+
+            // If the profile is set as default, clear default flag from all other profiles
+            if (profile.IsDefault)
+            {
+                foreach (var p in profiles)
+                {
+                    p.IsDefault = false;
+                }
+            }
+
             if (ProfileExists(profile.ProfileName))
             {
                 throw new Exception("A profile with this name already exists. Please choose a different name.");
             }
 
-            try
-            {
-                using (StreamWriter writer = new StreamWriter(FilePath, true))
-                {
-                    writer.WriteLine($"{profile.ProfileName}|{profile.InputDevice}|{profile.AutoJump}|{profile.MouseSensitivity}|{profile.ControllerSensitivity}|" +
-                                     $"{profile.InvertYAxis}|{profile.Brightness}|{profile.FancyGraphics}|{profile.VSync}|{profile.Fullscreen}|" +
-                                     $"{profile.RenderDistance}|{profile.FieldOfView}|{profile.RayTracing}|{profile.Upscaling}|{profile.MusicVolume}|" +
-                                     $"{profile.SoundVolume}|{profile.HUDTransparency}|{profile.ShowCoordinates}|{profile.CameraPerspective}");
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error saving profile", ex);
-            }
+            profiles.Add(profile);
+            SaveAllProfiles(profiles);
         }
+
 
         #endregion
 
         #region Update Profile
 
-        public static void UpdateProfile(PlayerProfile updatedProfile)
+        public static void SaveAllProfiles(List<PlayerProfile> profiles)
         {
-            var profiles = LoadProfiles();
-            var existingProfile = profiles.FirstOrDefault(p => p.ProfileName.Equals(updatedProfile.ProfileName, StringComparison.OrdinalIgnoreCase));
-
-            if (existingProfile != null)
+            using (StreamWriter writer = new StreamWriter(FilePath, false))
             {
-                profiles.Remove(existingProfile);
-                profiles.Add(updatedProfile);
-
-                // Rewrite the file with updated profiles
-                using (StreamWriter writer = new StreamWriter(FilePath, false))
+                foreach (var profile in profiles)
                 {
-                    foreach (var profile in profiles)
-                    {
-                        writer.WriteLine($"{profile.ProfileName}|{profile.InputDevice}|{profile.AutoJump}|{profile.MouseSensitivity}|{profile.ControllerSensitivity}|" +
-                                         $"{profile.InvertYAxis}|{profile.Brightness}|{profile.FancyGraphics}|{profile.VSync}|{profile.Fullscreen}|" +
-                                         $"{profile.RenderDistance}|{profile.FieldOfView}|{profile.RayTracing}|{profile.Upscaling}|{profile.MusicVolume}|" +
-                                         $"{profile.SoundVolume}|{profile.HUDTransparency}|{profile.ShowCoordinates}|{profile.CameraPerspective}");
-                    }
+                    writer.WriteLine($"{profile.ProfileName}|{profile.InputDevice}|{profile.AutoJump}|{profile.MouseSensitivity}|{profile.ControllerSensitivity}|" +
+                                     $"{profile.InvertYAxis}|{profile.Brightness}|{profile.FancyGraphics}|{profile.VSync}|{profile.Fullscreen}|" +
+                                     $"{profile.RenderDistance}|{profile.FieldOfView}|{profile.RayTracing}|{profile.Upscaling}|{profile.MusicVolume}|" +
+                                     $"{profile.SoundVolume}|{profile.HUDTransparency}|{profile.ShowCoordinates}|{profile.CameraPerspective}|{profile.IsDefault}");
                 }
             }
-            else
-            {
-                throw new Exception("Profile not found for updating.");
-            }
         }
+
 
         #endregion
 
@@ -94,55 +81,46 @@ namespace Assignment_4_File_IO
         public static List<PlayerProfile> LoadProfiles()
         {
             var profiles = new List<PlayerProfile>();
-
-            try
+            if (File.Exists(FilePath))
             {
-                if (File.Exists(FilePath))
+                using (StreamReader reader = new StreamReader(FilePath))
                 {
-                    using (StreamReader reader = new StreamReader(FilePath))
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
                     {
-                        string line;
-                        while ((line = reader.ReadLine()) != null)
+                        var profileData = line.Split('|');
+                        if (profileData.Length == 20) // Updated length to include IsDefault
                         {
-                            var profileData = line.Split('|');
-
-                            if (profileData.Length == 19)
+                            var profile = new PlayerProfile(profileData[0])
                             {
-                                var profile = new PlayerProfile(profileData[0])
-                                {
-                                    InputDevice = (InputDevice)Enum.Parse(typeof(InputDevice), profileData[1]),
-                                    AutoJump = bool.Parse(profileData[2]),
-                                    MouseSensitivity = int.Parse(profileData[3]),
-                                    ControllerSensitivity = int.Parse(profileData[4]),
-                                    InvertYAxis = bool.Parse(profileData[5]),
-                                    Brightness = int.Parse(profileData[6]),
-                                    FancyGraphics = bool.Parse(profileData[7]),
-                                    VSync = bool.Parse(profileData[8]),
-                                    Fullscreen = bool.Parse(profileData[9]),
-                                    RenderDistance = int.Parse(profileData[10]),
-                                    FieldOfView = int.Parse(profileData[11]),
-                                    RayTracing = bool.Parse(profileData[12]),
-                                    Upscaling = bool.Parse(profileData[13]),
-                                    MusicVolume = int.Parse(profileData[14]),
-                                    SoundVolume = int.Parse(profileData[15]),
-                                    HUDTransparency = int.Parse(profileData[16]),
-                                    ShowCoordinates = bool.Parse(profileData[17]),
-                                    CameraPerspective = (CameraPerspective)Enum.Parse(typeof(CameraPerspective), profileData[18])
-                                };
-
-                                profiles.Add(profile);
-                            }
+                                InputDevice = (InputDevice)Enum.Parse(typeof(InputDevice), profileData[1]),
+                                AutoJump = bool.Parse(profileData[2]),
+                                MouseSensitivity = int.Parse(profileData[3]),
+                                ControllerSensitivity = int.Parse(profileData[4]),
+                                InvertYAxis = bool.Parse(profileData[5]),
+                                Brightness = int.Parse(profileData[6]),
+                                FancyGraphics = bool.Parse(profileData[7]),
+                                VSync = bool.Parse(profileData[8]),
+                                Fullscreen = bool.Parse(profileData[9]),
+                                RenderDistance = int.Parse(profileData[10]),
+                                FieldOfView = int.Parse(profileData[11]),
+                                RayTracing = bool.Parse(profileData[12]),
+                                Upscaling = bool.Parse(profileData[13]),
+                                MusicVolume = int.Parse(profileData[14]),
+                                SoundVolume = int.Parse(profileData[15]),
+                                HUDTransparency = int.Parse(profileData[16]),
+                                ShowCoordinates = bool.Parse(profileData[17]),
+                                CameraPerspective = (CameraPerspective)Enum.Parse(typeof(CameraPerspective), profileData[18]),
+                                IsDefault = bool.Parse(profileData[19])
+                            };
+                            profiles.Add(profile);
                         }
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                throw new Exception("Error loading profiles", ex);
-            }
-
             return profiles;
         }
+
 
         #endregion
     }

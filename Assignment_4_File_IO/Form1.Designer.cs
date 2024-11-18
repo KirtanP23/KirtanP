@@ -83,6 +83,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnSetDefault = new System.Windows.Forms.Button();
             this.tbcSettings.SuspendLayout();
             this.tbpMovement.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tkbControllerSensi)).BeginInit();
@@ -741,6 +742,18 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnSetDefault
+            // 
+            this.btnSetDefault.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetDefault.Location = new System.Drawing.Point(414, 558);
+            this.btnSetDefault.Name = "btnSetDefault";
+            this.btnSetDefault.Size = new System.Drawing.Size(168, 34);
+            this.btnSetDefault.TabIndex = 8;
+            this.btnSetDefault.Text = "Set As Default";
+            this.toolTip1.SetToolTip(this.btnSetDefault, "Click to set this profile as Default");
+            this.btnSetDefault.UseVisualStyleBackColor = true;
+            this.btnSetDefault.Click += new System.EventHandler(this.btnSetDefault_Click);
+            // 
             // frmMain
             // 
             this.AcceptButton = this.btnSave;
@@ -748,6 +761,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1071, 598);
+            this.Controls.Add(this.btnSetDefault);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbProfiles);
@@ -838,6 +852,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button btnSetDefault;
     }
 }
 

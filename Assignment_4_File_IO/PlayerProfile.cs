@@ -22,6 +22,7 @@ namespace Assignment_4_File_IO
 
     public class PlayerProfile
     {
+        public bool IsDefault { get; set; } = false;
         #region Input Settings
 
         public InputDevice InputDevice { get; set; } = InputDevice.Keyboard;
