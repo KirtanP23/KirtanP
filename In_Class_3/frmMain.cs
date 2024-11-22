@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* *****************************
+* Title:   In Class Activity 3
+* Author:  Kirtan Patel
+* Date:    November 22, 2024
+* Purpose: Sportleagues Team Info Application
+* ***************************** */
+
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,19 +18,27 @@ using System.Windows.Forms;
 
 namespace In_Class_3
 {
+    /// <summary>
+    /// main class
+    /// </summary>
     public partial class frmMain : Form
     {
+        /// <summary>
+        /// Initializes a new instance
+        /// </summary>
         public frmMain()
         {
             InitializeComponent();
         }
-        private void ResetForm()
-        {
-            panRangers.Visible = false; panBosna.Visible = false; panAurora.Visible = false;
-            panEagles.Visible = false; panKickers.Visible = false; panStaffords.Visible = false;
-            panStrikers.Visible = false;
-        }
+        
         private Dictionary<int, Panel> teamPanels;
+        #region Form Load Event
+
+        /// <summary>
+        /// Form Load Event that loads data into datagridview and combobox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
             ResetForm();
@@ -46,6 +62,15 @@ namespace In_Class_3
                 panel.Visible = false;
             }
         }
+        #endregion
+
+        #region ComboBox Event Handler
+        /// <summary>
+        /// Handles the Combobox Index change event each time a team is selected
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cmbTeams.SelectedIndex != -1)
@@ -63,6 +88,24 @@ namespace In_Class_3
                 
             }
         }
+
+        #endregion
+
+        #region Methods
+        /// <summary>
+        /// Method to Reset the form on each load event
+        /// </summary>
+        private void ResetForm()
+        {
+            panRangers.Visible = false; panBosna.Visible = false; panAurora.Visible = false;
+            panEagles.Visible = false; panKickers.Visible = false; panStaffords.Visible = false;
+            panStrikers.Visible = false;
+        }
+
+        /// <summary>
+        /// Method to Show team logo of selected team respectively
+        /// </summary>
+        /// <param name="teamId"></param>
         private void ShowTeamLogo(int teamId)
         {
             // Hide all panels
@@ -81,5 +124,6 @@ namespace In_Class_3
                 MessageBox.Show("No logo available for this team.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+        #endregion
     }
 }
