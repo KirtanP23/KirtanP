@@ -226,7 +226,7 @@ namespace Assignment_4_File_IO
             Application.Exit();
         }
 
-        #endregion
+        
 
         private void btnSetDefault_Click(object sender, EventArgs e)
         {
@@ -248,5 +248,6 @@ namespace Assignment_4_File_IO
                 MessageBox.Show("Please select a profile to set as default.", "Warning");
             }
         }
+        #endregion
     }
 }

@@ -108,8 +108,8 @@
             this.tbcSettings.Location = new System.Drawing.Point(4, 75);
             this.tbcSettings.Name = "tbcSettings";
             this.tbcSettings.SelectedIndex = 0;
-            this.tbcSettings.Size = new System.Drawing.Size(1062, 481);
-            this.tbcSettings.TabIndex = 0;
+            this.tbcSettings.Size = new System.Drawing.Size(1062, 477);
+            this.tbcSettings.TabIndex = 17;
             // 
             // tbpMovement
             // 
@@ -140,7 +140,7 @@
             this.cbxInvertAxisOn.Location = new System.Drawing.Point(171, 240);
             this.cbxInvertAxisOn.Name = "cbxInvertAxisOn";
             this.cbxInvertAxisOn.Size = new System.Drawing.Size(46, 20);
-            this.cbxInvertAxisOn.TabIndex = 14;
+            this.cbxInvertAxisOn.TabIndex = 5;
             this.cbxInvertAxisOn.Text = "On";
             this.toolTip1.SetToolTip(this.cbxInvertAxisOn, "Select to invert Y-Axis");
             this.cbxInvertAxisOn.UseVisualStyleBackColor = true;
@@ -153,7 +153,7 @@
             this.cbxAutoJumpOn.Location = new System.Drawing.Point(171, 76);
             this.cbxAutoJumpOn.Name = "cbxAutoJumpOn";
             this.cbxAutoJumpOn.Size = new System.Drawing.Size(46, 20);
-            this.cbxAutoJumpOn.TabIndex = 12;
+            this.cbxAutoJumpOn.TabIndex = 2;
             this.cbxAutoJumpOn.Text = "On";
             this.toolTip1.SetToolTip(this.cbxAutoJumpOn, "Select if Autom Jump is On or Off");
             this.cbxAutoJumpOn.UseVisualStyleBackColor = true;
@@ -186,7 +186,7 @@
             this.tkbControllerSensi.Minimum = 30;
             this.tkbControllerSensi.Name = "tkbControllerSensi";
             this.tkbControllerSensi.Size = new System.Drawing.Size(104, 25);
-            this.tkbControllerSensi.TabIndex = 9;
+            this.tkbControllerSensi.TabIndex = 4;
             this.tkbControllerSensi.TickFrequency = 5;
             this.toolTip1.SetToolTip(this.tkbControllerSensi, "Select Sensitivity for Controller");
             this.tkbControllerSensi.Value = 50;
@@ -220,7 +220,7 @@
             this.tkbSensitivity.Minimum = 30;
             this.tkbSensitivity.Name = "tkbSensitivity";
             this.tkbSensitivity.Size = new System.Drawing.Size(104, 25);
-            this.tkbSensitivity.TabIndex = 6;
+            this.tkbSensitivity.TabIndex = 3;
             this.tkbSensitivity.TickFrequency = 5;
             this.toolTip1.SetToolTip(this.tkbSensitivity, "Select Sensitivity for Mouse");
             this.tkbSensitivity.Value = 50;
@@ -263,7 +263,7 @@
             this.cmbInputDevice.Location = new System.Drawing.Point(191, 20);
             this.cmbInputDevice.Name = "cmbInputDevice";
             this.cmbInputDevice.Size = new System.Drawing.Size(121, 24);
-            this.cmbInputDevice.TabIndex = 0;
+            this.cmbInputDevice.TabIndex = 1;
             this.toolTip1.SetToolTip(this.cmbInputDevice, "Choose Inout Device Type");
             // 
             // tbpVideo
@@ -289,7 +289,7 @@
             this.tbpVideo.Location = new System.Drawing.Point(4, 25);
             this.tbpVideo.Name = "tbpVideo";
             this.tbpVideo.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpVideo.Size = new System.Drawing.Size(1054, 452);
+            this.tbpVideo.Size = new System.Drawing.Size(1054, 448);
             this.tbpVideo.TabIndex = 2;
             this.tbpVideo.Text = "Video";
             this.toolTip1.SetToolTip(this.tbpVideo, "Video Menu");
@@ -299,7 +299,7 @@
             // 
             this.cbxUpscalingOn.AutoSize = true;
             this.cbxUpscalingOn.Enabled = false;
-            this.cbxUpscalingOn.Location = new System.Drawing.Point(120, 448);
+            this.cbxUpscalingOn.Location = new System.Drawing.Point(604, 24);
             this.cbxUpscalingOn.Name = "cbxUpscalingOn";
             this.cbxUpscalingOn.Size = new System.Drawing.Size(55, 24);
             this.cbxUpscalingOn.TabIndex = 20;
@@ -309,7 +309,7 @@
             // lblUpscaling
             // 
             this.lblUpscaling.AutoSize = true;
-            this.lblUpscaling.Location = new System.Drawing.Point(40, 448);
+            this.lblUpscaling.Location = new System.Drawing.Point(485, 24);
             this.lblUpscaling.Name = "lblUpscaling";
             this.lblUpscaling.Size = new System.Drawing.Size(104, 20);
             this.lblUpscaling.TabIndex = 19;
@@ -321,7 +321,7 @@
             this.cbxRayTracingOn.Location = new System.Drawing.Point(179, 395);
             this.cbxRayTracingOn.Name = "cbxRayTracingOn";
             this.cbxRayTracingOn.Size = new System.Drawing.Size(55, 24);
-            this.cbxRayTracingOn.TabIndex = 17;
+            this.cbxRayTracingOn.TabIndex = 13;
             this.cbxRayTracingOn.Text = "On";
             this.toolTip1.SetToolTip(this.cbxRayTracingOn, "Select to turn Ray Tracing");
             this.cbxRayTracingOn.UseVisualStyleBackColor = true;
@@ -362,7 +362,7 @@
             0});
             this.nudFieldofView.Name = "nudFieldofView";
             this.nudFieldofView.Size = new System.Drawing.Size(90, 27);
-            this.nudFieldofView.TabIndex = 14;
+            this.nudFieldofView.TabIndex = 12;
             this.toolTip1.SetToolTip(this.nudFieldofView, "Select Field of View");
             this.nudFieldofView.Value = new decimal(new int[] {
             64,
@@ -385,7 +385,7 @@
             0});
             this.nudRenderDistance.Name = "nudRenderDistance";
             this.nudRenderDistance.Size = new System.Drawing.Size(90, 27);
-            this.nudRenderDistance.TabIndex = 13;
+            this.nudRenderDistance.TabIndex = 11;
             this.toolTip1.SetToolTip(this.nudRenderDistance, "Select Render Distance");
             this.nudRenderDistance.Value = new decimal(new int[] {
             16,
@@ -442,7 +442,7 @@
             this.cbxVsyncOn.Location = new System.Drawing.Point(133, 155);
             this.cbxVsyncOn.Name = "cbxVsyncOn";
             this.cbxVsyncOn.Size = new System.Drawing.Size(55, 24);
-            this.cbxVsyncOn.TabIndex = 6;
+            this.cbxVsyncOn.TabIndex = 9;
             this.cbxVsyncOn.Text = "On";
             this.toolTip1.SetToolTip(this.cbxVsyncOn, "Select to turn V-Sync");
             this.cbxVsyncOn.UseVisualStyleBackColor = true;
@@ -455,7 +455,7 @@
             this.cbxFancyGraphicsOn.Location = new System.Drawing.Point(191, 90);
             this.cbxFancyGraphicsOn.Name = "cbxFancyGraphicsOn";
             this.cbxFancyGraphicsOn.Size = new System.Drawing.Size(55, 24);
-            this.cbxFancyGraphicsOn.TabIndex = 4;
+            this.cbxFancyGraphicsOn.TabIndex = 8;
             this.cbxFancyGraphicsOn.Text = "On";
             this.toolTip1.SetToolTip(this.cbxFancyGraphicsOn, "Select to turn Fancy Graphics");
             this.cbxFancyGraphicsOn.UseVisualStyleBackColor = true;
@@ -488,7 +488,7 @@
             this.tkbBrightness.Maximum = 100;
             this.tkbBrightness.Name = "tkbBrightness";
             this.tkbBrightness.Size = new System.Drawing.Size(104, 25);
-            this.tkbBrightness.TabIndex = 1;
+            this.tkbBrightness.TabIndex = 7;
             this.tkbBrightness.TickFrequency = 10;
             this.toolTip1.SetToolTip(this.tkbBrightness, "Select Brightness");
             this.tkbBrightness.Value = 50;
@@ -538,7 +538,7 @@
             this.tkbSoundVolume.Maximum = 100;
             this.tkbSoundVolume.Name = "tkbSoundVolume";
             this.tkbSoundVolume.Size = new System.Drawing.Size(104, 25);
-            this.tkbSoundVolume.TabIndex = 4;
+            this.tkbSoundVolume.TabIndex = 16;
             this.tkbSoundVolume.TickFrequency = 10;
             this.toolTip1.SetToolTip(this.tkbSoundVolume, "Select Sound Volume");
             this.tkbSoundVolume.Value = 100;
@@ -571,7 +571,7 @@
             this.tkbMusicVolume.Maximum = 100;
             this.tkbMusicVolume.Name = "tkbMusicVolume";
             this.tkbMusicVolume.Size = new System.Drawing.Size(104, 25);
-            this.tkbMusicVolume.TabIndex = 1;
+            this.tkbMusicVolume.TabIndex = 15;
             this.tkbMusicVolume.TickFrequency = 10;
             this.toolTip1.SetToolTip(this.tkbMusicVolume, "Select Music Volume");
             this.tkbMusicVolume.Value = 100;
@@ -599,7 +599,7 @@
             this.tbpInterface.Location = new System.Drawing.Point(4, 25);
             this.tbpInterface.Name = "tbpInterface";
             this.tbpInterface.Padding = new System.Windows.Forms.Padding(3);
-            this.tbpInterface.Size = new System.Drawing.Size(1054, 452);
+            this.tbpInterface.Size = new System.Drawing.Size(1054, 448);
             this.tbpInterface.TabIndex = 4;
             this.tbpInterface.Text = "Interface";
             this.toolTip1.SetToolTip(this.tbpInterface, "Interface Menu");
@@ -607,11 +607,12 @@
             // 
             // cmbCameraPerspective
             // 
+            this.cmbCameraPerspective.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCameraPerspective.FormattingEnabled = true;
             this.cmbCameraPerspective.Location = new System.Drawing.Point(253, 170);
             this.cmbCameraPerspective.Name = "cmbCameraPerspective";
             this.cmbCameraPerspective.Size = new System.Drawing.Size(170, 24);
-            this.cmbCameraPerspective.TabIndex = 6;
+            this.cmbCameraPerspective.TabIndex = 20;
             this.toolTip1.SetToolTip(this.cmbCameraPerspective, "Choose from the Perspectives");
             // 
             // lblCameraPerspective
@@ -630,7 +631,7 @@
             this.cbxCoordinatesOn.Location = new System.Drawing.Point(236, 107);
             this.cbxCoordinatesOn.Name = "cbxCoordinatesOn";
             this.cbxCoordinatesOn.Size = new System.Drawing.Size(46, 20);
-            this.cbxCoordinatesOn.TabIndex = 4;
+            this.cbxCoordinatesOn.TabIndex = 19;
             this.cbxCoordinatesOn.Text = "On";
             this.toolTip1.SetToolTip(this.cbxCoordinatesOn, "Select to show Coordinates");
             this.cbxCoordinatesOn.UseVisualStyleBackColor = true;
@@ -663,7 +664,7 @@
             this.tkbHudTransparency.Minimum = 25;
             this.tkbHudTransparency.Name = "tkbHudTransparency";
             this.tkbHudTransparency.Size = new System.Drawing.Size(104, 25);
-            this.tkbHudTransparency.TabIndex = 1;
+            this.tkbHudTransparency.TabIndex = 18;
             this.tkbHudTransparency.TickFrequency = 5;
             this.toolTip1.SetToolTip(this.tkbHudTransparency, "Select HUDD Transparency");
             this.tkbHudTransparency.Value = 100;
@@ -685,7 +686,7 @@
             this.btnSave.Location = new System.Drawing.Point(74, 558);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(168, 34);
-            this.btnSave.TabIndex = 1;
+            this.btnSave.TabIndex = 21;
             this.btnSave.Text = "Save";
             this.toolTip1.SetToolTip(this.btnSave, "Click to Save");
             this.btnSave.UseVisualStyleBackColor = true;
@@ -696,7 +697,7 @@
             this.txtProfileName.Location = new System.Drawing.Point(199, 30);
             this.txtProfileName.Name = "txtProfileName";
             this.txtProfileName.Size = new System.Drawing.Size(172, 22);
-            this.txtProfileName.TabIndex = 2;
+            this.txtProfileName.TabIndex = 0;
             this.toolTip1.SetToolTip(this.txtProfileName, "Enter Profile Name");
             // 
             // lblProfileName
@@ -736,7 +737,7 @@
             this.btnExit.Location = new System.Drawing.Point(751, 558);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(168, 34);
-            this.btnExit.TabIndex = 7;
+            this.btnExit.TabIndex = 23;
             this.btnExit.Text = "Exit";
             this.toolTip1.SetToolTip(this.btnExit, "Click to Exit");
             this.btnExit.UseVisualStyleBackColor = true;
@@ -748,7 +749,7 @@
             this.btnSetDefault.Location = new System.Drawing.Point(414, 558);
             this.btnSetDefault.Name = "btnSetDefault";
             this.btnSetDefault.Size = new System.Drawing.Size(168, 34);
-            this.btnSetDefault.TabIndex = 8;
+            this.btnSetDefault.TabIndex = 22;
             this.btnSetDefault.Text = "Set As Default";
             this.toolTip1.SetToolTip(this.btnSetDefault, "Click to set this profile as Default");
             this.btnSetDefault.UseVisualStyleBackColor = true;

@@ -1,0 +1,9 @@
+K:\COSC_2100\Demo_w03_Tue\bin\Debug\Demo_w03_Tue.exe.config
+K:\COSC_2100\Demo_w03_Tue\bin\Debug\Demo_w03_Tue.exe
+K:\COSC_2100\Demo_w03_Tue\bin\Debug\Demo_w03_Tue.pdb
+K:\COSC_2100\Demo_w03_Tue\obj\Debug\Demo_w03_Tue.csproj.AssemblyReference.cache
+K:\COSC_2100\Demo_w03_Tue\obj\Debug\Demo_w03_Tue.Properties.Resources.resources
+K:\COSC_2100\Demo_w03_Tue\obj\Debug\Demo_w03_Tue.csproj.GenerateResource.cache
+K:\COSC_2100\Demo_w03_Tue\obj\Debug\Demo_w03_Tue.csproj.CoreCompileInputs.cache
+K:\COSC_2100\Demo_w03_Tue\obj\Debug\Demo_w03_Tue.exe
+K:\COSC_2100\Demo_w03_Tue\obj\Debug\Demo_w03_Tue.pdb

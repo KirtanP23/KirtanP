@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_Week10a_DataBindingPlu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment_4_File_IO", "Assignment_4_File_IO\Assignment_4_File_IO.csproj", "{143FF25D-51CF-46AE-BE3E-BBC546149195}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "In_Class_3", "In_Class_3\In_Class_3.csproj", "{FA581716-FCFB-48DA-AE40-67D3C158FDCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{143FF25D-51CF-46AE-BE3E-BBC546149195}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{143FF25D-51CF-46AE-BE3E-BBC546149195}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{143FF25D-51CF-46AE-BE3E-BBC546149195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA581716-FCFB-48DA-AE40-67D3C158FDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA581716-FCFB-48DA-AE40-67D3C158FDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA581716-FCFB-48DA-AE40-67D3C158FDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA581716-FCFB-48DA-AE40-67D3C158FDCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
