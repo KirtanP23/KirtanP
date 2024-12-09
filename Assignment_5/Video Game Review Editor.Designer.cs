@@ -53,6 +53,7 @@
             this.txtRating = new System.Windows.Forms.MaskedTextBox();
             this.lblRating = new System.Windows.Forms.Label();
             this.lblReview = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reviewsBindingSource)).BeginInit();
@@ -78,6 +79,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(520, 420);
             this.dataGridView1.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.dataGridView1, "Games");
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // dataGridView2
@@ -92,6 +94,7 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(639, 420);
             this.dataGridView2.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.dataGridView2, "Reviews");
             this.dataGridView2.SelectionChanged += new System.EventHandler(this.dataGridView2_SelectionChanged);
             // 
             // reviewsBindingSource
@@ -129,6 +132,7 @@
             this.btnAdd.Size = new System.Drawing.Size(99, 59);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add\r\nReview";
+            this.toolTip1.SetToolTip(this.btnAdd, "Click to Add review");
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -139,6 +143,7 @@
             this.btnDelete.Size = new System.Drawing.Size(99, 59);
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Delete\r\nReview";
+            this.toolTip1.SetToolTip(this.btnDelete, "Click to Delete Review");
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -149,6 +154,7 @@
             this.txtReview.Name = "txtReview";
             this.txtReview.Size = new System.Drawing.Size(567, 91);
             this.txtReview.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.txtReview, "Enter your Comments");
             // 
             // menuStrip1
             // 
@@ -245,6 +251,7 @@
             this.txtRating.Size = new System.Drawing.Size(107, 22);
             this.txtRating.TabIndex = 1;
             this.txtRating.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.txtRating, "Enter Rating");
             // 
             // lblRating
             // 
@@ -330,6 +337,7 @@
         private System.Windows.Forms.MaskedTextBox txtRating;
         private System.Windows.Forms.Label lblRating;
         private System.Windows.Forms.Label lblReview;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

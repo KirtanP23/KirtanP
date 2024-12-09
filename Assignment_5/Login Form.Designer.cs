@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPassKey = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -39,6 +40,7 @@
             this.lblReg = new System.Windows.Forms.Label();
             this.lblHere = new System.Windows.Forms.Label();
             this.lblTitleLog = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // lblEmail
@@ -67,6 +69,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(153, 22);
             this.txtEmail.TabIndex = 1;
+            this.toolTip1.SetToolTip(this.txtEmail, "Enter Email");
             // 
             // btnLogin
             // 
@@ -76,6 +79,7 @@
             this.btnLogin.Size = new System.Drawing.Size(93, 40);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
+            this.toolTip1.SetToolTip(this.btnLogin, "Click to Login");
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -88,6 +92,7 @@
             this.btnRegister.Size = new System.Drawing.Size(93, 40);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
+            this.toolTip1.SetToolTip(this.btnRegister, "Click to head to Register Page.");
             this.btnRegister.UseVisualStyleBackColor = false;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
@@ -100,6 +105,7 @@
             this.btnCancel.Size = new System.Drawing.Size(93, 40);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
+            this.toolTip1.SetToolTip(this.btnCancel, "Click to Exit");
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
@@ -110,6 +116,7 @@
             this.txtPassKey.Name = "txtPassKey";
             this.txtPassKey.Size = new System.Drawing.Size(153, 22);
             this.txtPassKey.TabIndex = 2;
+            this.toolTip1.SetToolTip(this.txtPassKey, "Enter Passkey");
             this.txtPassKey.UseSystemPasswordChar = true;
             this.txtPassKey.ValidatingType = typeof(int);
             // 
@@ -193,5 +200,6 @@
         private System.Windows.Forms.Label lblReg;
         private System.Windows.Forms.Label lblHere;
         private System.Windows.Forms.Label lblTitleLog;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
