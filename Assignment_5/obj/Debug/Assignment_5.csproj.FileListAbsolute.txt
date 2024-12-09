@@ -1,0 +1,12 @@
+K:\COSC_2100\Assignment_5\bin\Debug\Assignment_5.exe.config
+K:\COSC_2100\Assignment_5\bin\Debug\Assignment_5.exe
+K:\COSC_2100\Assignment_5\bin\Debug\Assignment_5.pdb
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.csproj.AssemblyReference.cache
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.frmLogin.resources
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.frmMain.resources
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.frmRegister.resources
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.Properties.Resources.resources
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.csproj.GenerateResource.cache
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.csproj.CoreCompileInputs.cache
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.exe
+K:\COSC_2100\Assignment_5\obj\Debug\Assignment_5.pdb

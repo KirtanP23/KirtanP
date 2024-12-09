@@ -318,21 +318,6 @@ namespace ASSIGNMENT_1
                 tbxCurrentTurn.Text = $"{txtPlayer2.Text} ({player2Symbol}) goes first";
                 playerTurn = false; // Player 2's turn
             }
-        }
-        #endregion
-
-        #region Reset Button
-
-        /// <summary>
-        /// Reset the game and set the scores to default when Reset is clicked.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        // Reset Button Click Logic
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            ResetGame();
-            // Reset all the labels, textboxes and radio buttons
             player1Wins = 0;
             player2Wins = 0;
             draws = 0;
@@ -347,6 +332,20 @@ namespace ASSIGNMENT_1
             rdbP1x.Checked = false;
             rdbP2o.Checked = false;
             rdbP2x.Checked = false;
+        }
+        #endregion
+
+        #region Reset Button
+
+        /// <summary>
+        /// Reset the game and set the scores to default when Reset is clicked.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        // Reset Button Click Logic
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetGame();
         }
         #endregion
 
