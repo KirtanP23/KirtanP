@@ -1,0 +1,11 @@
+K:\COSC_2100\Final_Assignment\bin\Debug\Final_Assignment.exe.config
+K:\COSC_2100\Final_Assignment\bin\Debug\Final_Assignment.exe
+K:\COSC_2100\Final_Assignment\bin\Debug\Final_Assignment.pdb
+K:\COSC_2100\Final_Assignment\obj\Debug\Final_Assignment.csproj.AssemblyReference.cache
+K:\COSC_2100\Final_Assignment\obj\Debug\Final_Assignment.AddEditContactForm.resources
+K:\COSC_2100\Final_Assignment\obj\Debug\Final_Assignment.frmMain.resources
+K:\COSC_2100\Final_Assignment\obj\Debug\Final_Assignment.Properties.Resources.resources
+K:\COSC_2100\Final_Assignment\obj\Debug\Final_Assignment.csproj.GenerateResource.cache
+K:\COSC_2100\Final_Assignment\obj\Debug\Final_Assignment.csproj.CoreCompileInputs.cache
+K:\COSC_2100\Final_Assignment\obj\Debug\Final_Assignment.exe
+K:\COSC_2100\Final_Assignment\obj\Debug\Final_Assignment.pdb

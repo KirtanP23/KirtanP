@@ -74,5 +74,30 @@ namespace Assignment_5
         }
 
         #endregion
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+            if (string.IsNullOrWhiteSpace(txtFirstName.Text) || string.IsNullOrWhiteSpace(txtLastName.Text) ||
+                string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtPasskey.Text))
+            {
+                MessageBox.Show("All fields are required.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (!int.TryParse(txtPasskey.Text.Trim(), out int passKey) || passKey < 1000 || passKey > 9999)
+            {
+                MessageBox.Show("PassKey must be a 4-digit number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            User newUser = new User(0, txtFirstName.Text.Trim(), txtLastName.Text.Trim(), txtEmail.Text.Trim(), passKey);
+            newUser.InsertUser();
+
+            MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+            frmLogin frm = new frmLogin();
+            frm.ShowDialog();
+        }
     }
 }

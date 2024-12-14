@@ -120,7 +120,7 @@
             this.btnRegister.Text = "Register";
             this.toolTip1.SetToolTip(this.btnRegister, "Click to Register");
             this.btnRegister.UseVisualStyleBackColor = true;
-            this.btnRegister.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnCancel
             // 
