@@ -4,6 +4,7 @@
  *  Date: 13 December 2024
  *  Used ChatGPT to create script, had to change the methods a little bit and removed the methods
  *  that were not needed and not running, the update, insert methods were failing so they were removed.
+ *  Also, after a lot of struggle I did with databases, i had to drop the database idea and created the rest of application.
  */
 
 
