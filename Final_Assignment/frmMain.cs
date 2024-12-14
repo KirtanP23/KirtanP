@@ -1,4 +1,11 @@
-﻿using Final_Assignment.Properties;
+﻿/*  Name : Kirtan Patel
+ *  Title : Main Form File
+ *  Purpose: Contains Main Form Code
+ *  Date: 13 December 2024
+ *  Used ChatGPT to create the logic refering to the previous user and review classes from assignment 5
+ */
+
+using Final_Assignment.Properties;
 using System;
 using System.Collections;
 using System.Collections.Generic;

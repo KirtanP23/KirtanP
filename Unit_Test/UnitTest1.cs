@@ -1,4 +1,14 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿/*  Name : Kirtan Patel
+ *  Title : Unit Test File
+ *  Purpose: Contains Unit Test Methods for the Final Assignment methods
+ *  Date: 13 December 2024
+ *  Used ChatGPT to create script, had to change the methods a little bit and removed the methods
+ *  that were not needed and not running, the update, insert methods were failing so they were removed.
+ */
+
+
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using Final_Assignment;

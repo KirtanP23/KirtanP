@@ -1,8 +1,8 @@
 ﻿/*
  * Name : Kirtan Patel
  * Title : Contact Class
- * Purpose : Contact Class file for assignment - 5
- * Date : 08 December 2024
+ * Purpose : Contact Class file for final assignment
+ * Date : 13 December 2024
  */
 
 
