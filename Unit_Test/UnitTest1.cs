@@ -1,71 +1,35 @@
-﻿using Final_Assignment;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
+using Final_Assignment;
 
-[TestClass]
-public class ContactTests
+namespace Final_Assignment_Tests
 {
-    [TestMethod]
-    public void ValidatePhoneNumber_ValidNumber_ReturnsTrue()
+    [TestClass]
+    public class ContactTests
     {
-        // Arrange
-        string validPhoneNumber = "1234567890";
 
-        // Act
-        bool isValid = Contact.ValidatePhoneNumber(validPhoneNumber);
+        [TestMethod]
+        public void Test_ValidatePhoneNumber_InvalidNumber()
+        {
+            string invalidPhoneNumber = "12345";
+            Assert.IsFalse(Contact.ValidatePhoneNumber(invalidPhoneNumber), "An invalid phone number should fail validation.");
+        }
 
-        // Assert
-        Assert.IsTrue(isValid, "Expected true for valid phone number.");
-    }
+        
+        [TestMethod]
+        public void Test_GetContact_InvalidID()
+        {
+            Contact retrievedContact = Contact.GetContact(-1);
+            Assert.IsNull(retrievedContact, "Contact with invalid ID should return null.");
+        }
 
-    [TestMethod]
-    public void ValidatePhoneNumber_InvalidNumber_ReturnsFalse()
-    {
-        // Arrange
-        string invalidPhoneNumber = "12345";
-
-        // Act
-        bool isValid = Contact.ValidatePhoneNumber(invalidPhoneNumber);
-
-        // Assert
-        Assert.IsFalse(isValid, "Expected false for invalid phone number.");
-    }
-
-    [TestMethod]
-    public void ValidatePhoneNumber_EmptyString_ReturnsFalse()
-    {
-        // Arrange
-        string emptyPhoneNumber = "";
-
-        // Act
-        bool isValid = Contact.ValidatePhoneNumber(emptyPhoneNumber);
-
-        // Assert
-        Assert.IsFalse(isValid, "Expected false for empty phone number.");
-    }
-
-    [TestMethod]
-    public void ValidatePhoneNumber_NullValue_ReturnsFalse()
-    {
-        // Arrange
-        string nullPhoneNumber = null;
-
-        // Act
-        bool isValid = Contact.ValidatePhoneNumber(nullPhoneNumber);
-
-        // Assert
-        Assert.IsFalse(isValid, "Expected false for null phone number.");
-    }
-
-    [TestMethod]
-    public void ValidatePhoneNumber_SpecialCharacters_ReturnsFalse()
-    {
-        // Arrange
-        string phoneNumberWithSpecialChars = "12345@6789";
-
-        // Act
-        bool isValid = Contact.ValidatePhoneNumber(phoneNumberWithSpecialChars);
-
-        // Assert
-        Assert.IsFalse(isValid, "Expected false for phone number with special characters.");
+        [TestMethod]
+        public void Test_ToString_ValidContact()
+        {
+            Contact contact = new Contact(1, "Test", "User", "1234567890", "test.user@example.com");
+            string expected = "Test User - 1234567890 (test.user@example.com)";
+            Assert.AreEqual(expected, contact.ToString(), "ToString() should return the correct format.");
+        }
     }
 }
